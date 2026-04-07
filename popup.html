@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1" rel="stylesheet"/>
+    
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <span class="material-symbols-outlined icon-fill">shield</span>
+            <span class="logo-text">Cerberus</span>
+        </div>
+        <div id="status-badge" class="badge-safe">
+            <span class="badge-text">SECURE</span>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="analysis-header">
+                <span class="label">URL ANALYSIS</span>
+                <span class="version">v4.2 AI</span>
+            </div>
+            <div class="url-card">
+                <div class="accent-bar"></div>
+                <div class="url-content">
+                    <div class="url-icon">
+                        <span class="material-symbols-outlined">public</span>
+                    </div>
+                    <div class="url-info">
+                        <span id="current-url" class="url-text">Detecting...</span>
+                        <span class="verified-tag">
+                            <span class="material-symbols-outlined icon-small icon-fill">verified</span>
+                            Encrypted Connection
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="radar-section">
+            <div id="radar-container" class="radar-circle">
+                <div class="radar-ping"></div>
+                <div class="radar-inner">
+                    <span id="radar-icon" class="material-symbols-outlined radar-main-icon">radar</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="feedback-container">
+            <p id="pass-feedback">System Ready for Deep Scan</p>
+        </div>
+
+        <div class="action-area">
+            <button id="scan-btn">
+                <span class="material-symbols-outlined">bolt</span>
+                DEEP AI SCAN
+            </button>
+        </div>
+    </main>
+    <script src="popup.js"></script>
+</body>
+</html>
